@@ -1,0 +1,143 @@
+/*
+Awesome Lea Verou's Heart Pattern Background
+---- */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+body {
+	background: url('https://im3.ezgif.com/tmp/ezgif-3-724a4333d3.gif');
+	background-color:#323232;
+	background-size: cover;
+	
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+Valentine's Pen
+---- */
+
+
+.centered {
+	width: 100%;
+	margin: 30vh auto;
+	text-align: center;
+}
+
+.centered h4 {
+	color: #FFFFFF;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+ input[type=checkbox]{
+  display:none;
+ }
+
+label {
+	height: 40px;
+	width: auto;
+	padding: 10px 40px;
+	display: inline-block; 
+	cursor: pointer;
+	margin: 0 20px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	transition: all .25s ease-in-out;
+}
+
+label:hover {
+	transform: 	scale(1.1,1.1);
+}
+
+#buton:hover {
+	animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.no {
+	background-color: #D8124B;
+	
+}
+
+.yes {
+	background-color: #12D890;
+}
+
+.answer--yes, .answer--no {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+.answer--yes {
+	background-image: url('https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+.answer--no {
+	background-image: url('https://media1.tenor.com/m/yAoGuzemPacAAAAC/bucktooth-smiling.gif');
+	background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+input.yes[type=checkbox]:checked ~ .answer--yes {
+  visibility: visible;
+	opacity: 100;
+}
+
+input.no[type=checkbox]:checked ~ .answer--no {
+  visibility: visible;
+	opacity: 100;
+}
