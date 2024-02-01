@@ -47,7 +47,7 @@ Awesome Lea Verou's Heart Pattern Background
     }
 }
 body {
-	background: url('https://ezgif.com/video-to-gif?url=https://cdn.discordapp.com/attachments/481920662953394198/1202322884803178506/vecteezy_pink-hearts-slowly-falling-in-a-purple-blue-background_1804147.mov?ex=65cd0971&is=65ba9471&hm=17dda69b20599327af6a37bbf7090210da8ee9ec50e1d59bb408d044519c9a28&');
+	background: url('/bg');
 	background-color:#323232;
 	background-size: cover;
 	
