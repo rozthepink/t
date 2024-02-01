@@ -47,7 +47,7 @@ Awesome Lea Verou's Heart Pattern Background
     }
 }
 body {
-	background: url('/bg.gif');
+	background: url('bg.gif');
 	background-color:#323232;
 	background-size: cover;
 	
